@@ -1,0 +1,243 @@
+<html>
+<head>
+<title>bbb</title>
+
+</head>
+<style>
+	*{
+		margin: 0px;padding: 0px;
+	}
+	.maindiv{width: 1200px;margin: 0px auto;}
+	.headerleft{height: 50px;width:300px;background-color: cyan;float: left;}
+	.headermiddle{height: 50px;width:840px;background: darkcyan;float: left;}
+
+	.headerright{height: 50px;width:50px;background-color: cyan;float: left;align-items: center; background-size: cover;display: flex;}	
+
+    .banner{height:40px;width:1200px;background-color:whitesmoke; float: left;}
+	.navbarleft{ height: 900px;width:200px;float: left;background-color: skyblue;font-size:large;display: block;}
+	.button {
+  background-color: royalblue;
+  border: none;
+  color: white;
+  padding: 15px 92px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
+}
+.navbar{width: 100px;height: 100px;color: white;}
+.navbarright{align-items:center;justify-content: space-between;display: flex;width: 600px;height: 200px;float: left;background-image: url("https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg?w=740&t=st=1691646170~exp=1691646770~hmac=5d0b2de27fc3af907af1396073d93f44b1235f941e5e735036257b6a2b2ff484");display: cover;}
+    .piechart{width: 300px;height:400px;float:left; }
+.left{width: 200PX;height: 200PX;float: left;}
+.table{width: 200px;height: 200px;float: left;}
+.left1{width: 180PX;height: 200PX;float: left;}
+
+     </style>
+
+    <body>
+	<div class="maindiv">
+	<div class="headerleft">
+	<h2 align="center">Thenisa tech private limited solutions</h2>
+	</div>
+	<div class="headermiddle">
+	<h1 align="center"></h1>
+	</div>
+	<div class="headerright">
+	<img src="https://www.pngfind.com/pngs/b/470-4703547_privacy-icon-png.png" align="center" width="30px" height="30px"></div>
+<div class="banner">
+		
+	<h1 align="center">welcome to Thenisa robotic trading services</h1>
+	</div>	
+	<section>
+	<div class="navbarleft">
+	<li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3388/3388720.png" width="10px" height="10px">     dash board</a></li><br><br>
+
+
+	<li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6Y_YbXEUeyJTfPyhMxIMsrjyywjPHLGOVGtrK0VNWA&s" width="10px" height="10px">       user details</a></li> <br>
+<br>
+
+
+	<li><a href="#"><img src="https://icon-library.com/images/course-icon/course-icon-8.jpg" width="10px" height="10px">        courses</a></li><br><br>
+
+
+
+	<li><a href="#"><img src="https://img.icons8.com/?size=512&id=122808&format=png"  width="10px" height="10px">         fourm     </a></li><br><br>
+
+
+
+	<li><a href="#"><img src="https://img.icons8.com/?size=1x&id=2445&format=png" width="10px" height="10px">   logout</a></li>
+	</section> 
+</div>
+<a href="#" class="button">My proflie</a>
+
+
+
+<a href="#" class="button">My Reports</a>          
+<a href="#" class="button">Apply for reports</a>
+<div class="navbar"></div>
+<div class="navbarright"><br><br><br><br><br>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <script type="text/javascript">
+
+
+      // Load Charts and the corechart package.
+google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for US when Charts is loaded.
+      google.charts.setOnLoadCallback(drawUSChart);
+
+      // Draw the pie chart for the INDIA when Charts is loaded.
+      google.charts.setOnLoadCallback(drawINDIAChart);
+
+
+        // Draw the pie chart for the INDIA when Charts is loaded.
+      google.charts.setOnLoadCallback(drawgobaltradingChart);
+
+
+      // Callback that draws the pie chart for US.
+      function drawUSChart() {
+
+        // Create the data table for US.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['algo trading', 70],
+          ['others', 30]         
+        ]);
+
+        // Set options for US pie chart.
+        var options = {title:'contribution of algorithmic trading to current trading volume in US',
+                       width:180,
+                       height:150};
+
+        // Instantiate and draw the chart for US.
+        var chart = new google.visualization.PieChart(document.getElementById('US_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for INDIA.
+      function drawINDIAChart()                                                                                                                          
+       {
+
+        // Create the data table for INDIA.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['algo trading', 60],
+          ['Others', 40]
+          
+        ]);
+
+        // Set options for INDIA pie chart.
+        var options = {title:'contribution of algorithmic trading to current trading volume in INDIA',
+                       width:180,
+                       height:150};
+
+        // Instantiate and draw the chart for INDIA.
+        var chart = new google.visualization.PieChart(document.getElementById('INDIA_chart_div'));
+        chart.draw(data, options);
+      }
+       // Callback that draws the pie chart for gobaltrading.
+      function drawgobaltradingChart() {
+
+        // Create the data table for gobal.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['algo trading', 75],
+          ['others', 25]         
+        ]);
+
+        // Set options for gobaltrading pie chart.
+        var options = {title:'contribution of algorithmic trading to current trading volume in gobaltrading',
+                       width:180,
+                       height:150};
+
+        // Instantiate and draw the chart for gobaltrading.
+        var chart = new google.visualization.PieChart(document.getElementById('gobaltrading_chart_div'));
+        chart.draw(data, options);
+      }
+
+
+    </script>
+  
+
+
+  <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="US_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="INDIA_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="gobaltrading_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table></div>
+    <br><br><br>
+    
+
+					 	
+		<div class="piechart1">	
+      
+		 <a href="#"><img src="https://img.freepik.com/free-vector/gradient-stock-market-concept-with-statistics_23-2149157696.jpg?w=740&t=st=1692011220~exp=1692011820~hmac=71db174aaa940f7332825802488dad48f83cc32d27e89146d56802af44a243f5" width="280px" height="180px">
+    
+      </a>
+
+
+<table style="width:50%; text-align:center;background-color: whitesmoke";>
+        <tr>
+            <th>course name</th>
+            <th>duration</th>
+            <th>Expiring on</th>
+            <th>days left</th>
+            <th>full details</th>
+        </tr><br><br><br>
+        <tr>
+            <td>Radha id</td>
+            <td>angel one days</td>
+            <td>2023-07-31</td>
+            <td>12</td>
+            <td>details</td>
+        </tr>
+
+        <tr>
+           <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+              <td></td>
+            
+            
+        </tr>
+         <tr>
+           <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+              <td></td>
+            
+        </tr>
+         <tr>
+           <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+              <td></td>
+            
+        </tr>
+      
+
+ 
+      </a></div>
+
+    
+
+	</body>
+				<html>
